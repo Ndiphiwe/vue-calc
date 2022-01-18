@@ -29,6 +29,9 @@ const app = Vue.createApp({
         },
         clearSum(){
             this.sum = ""
+        },
+        deleteSum(){
+            this.sum = this.sum.slice(0, -1)
         }
     },
 })
