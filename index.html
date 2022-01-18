@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@next"></script>
+        <script src="./app.js" defer></script>
+    <title>Vue Calculator</title>
+    <style>
+        /* #dsply{
+            padding: 10px 0;
+        } */
+        #inv{
+            opacity: 0;
+        }
+        /* .btnzz{
+            padding: 20px 40px;
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            height: 20vh;
+            font-size: 3rem;
+            padding: 60px;
+            font-family: sans;
+        }
+        button{
+            font-size: 2rem;
+            width: calc(100%/3);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="dsply"><h1><span id="inv">=</span>{{ sum }} </h1></div>
+        <hr>
+        <button class="btnzz" v-for="operator of operators" @click="addToSum(operator)">{{ operator }}</button>
+        <button class="btnzz" @click="evalSum()">=</button>
+        <button class="btnzz" @click="clearSum()">CLR</button>
+    </div>
+</body>
+</html>
