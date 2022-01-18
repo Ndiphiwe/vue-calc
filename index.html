@@ -37,7 +37,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="container w-50">
+        <div class="container">
             <div id="dsply"><h1><span id="inv">=&nbsp;</span>{{ sum }} </h1></div>
             <button class="btnzz btn-dark text-white" v-for="operator of operators" @click="addToSum(operator)">{{ operator }}</button>
             <button class="btnzz btn-warning" @click="evalSum()">=</button>
