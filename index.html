@@ -41,8 +41,8 @@
             <div id="dsply"><h1><span id="inv">=&nbsp;</span>{{ sum }} </h1></div>
             <button class="btnzz btn-dark text-white" v-for="operator of operators" @click="addToSum(operator)">{{ operator }}</button>
             <button class="btnzz btn-warning" @click="evalSum()">=</button>
-            <button class="btnzz btn-success" @click="clearSum()">CLR</button>
             <button class="btnzz btn-danger" @click="deleteSum()">DEL</button>
+            <button class="btnzz btn-success" @click="clearSum()">CLR</button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
